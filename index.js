@@ -19,6 +19,8 @@
 
     if (userGuess === randomNum) {
       comm.innerHTML = "Correct!";
+      document.getElementById("number-input").style.display = "none";
+      document.getElementById("submit").style.display = "none";
       tryAgainButton.style.display = 'block';
     } else if (userGuess > randomNum) {
       comm.innerHTML = "Go lower!";
@@ -31,8 +33,14 @@
     if (onClick === 4 && userGuess !== randomNum) {
         tryAgainButton.style.display = 'block';
         document.getElementById("number-input").style.display = "none";
+        document.getElementById("submit").style.display = "none";
         document.getElementById("comment").innerHTML = "The number was " + randomNum;
     }
+
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        // Prevent the form from being submitted (default behavior)
+        event.preventDefault();
+      });
   }
 
   function resetGame() {
