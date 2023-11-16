@@ -1,0 +1,70 @@
+body{
+    background-color: #0F0F0F;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+.page1{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+
+.page1-inner{
+    width: 400px;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    height: 200px;
+}
+
+.page2-inner{
+    width: 400px;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 50px;
+    color: white;
+    height: 350px;
+}
+
+.page1 p{
+    font-size: 24px;
+    color:antiquewhite;
+}
+
+button{
+    height: 30px;
+    width: 150px;
+    border-radius: 30px;
+    color: antiquewhite;
+    border: none;
+    background-color: #272829;
+}
+
+button:hover{
+    background-color: #F4DFC8;
+    color: black;
+}
+
+.attempts{
+    margin-top: 15px;
+}
+
+.btn-submit{
+    margin-top: 30px;
+}
+
+/* CSS for general styles */
+
+@media only screen and (max-width: 767px) {
+    /* CSS for styles specific to mobile devices */
+    .page1-inner,.page2-inner{
+        max-width: 100%;
+    }
+  }
+  
