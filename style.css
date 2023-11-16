@@ -55,6 +55,10 @@ button:hover{
     margin-top: 15px;
 }
 
+input{
+    border-radius: 20px;
+}
+
 
 
 /* CSS for general styles */
