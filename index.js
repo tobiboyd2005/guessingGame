@@ -31,8 +31,7 @@
     if (onClick === 4 && userGuess !== randomNum) {
         tryAgainButton.style.display = 'block';
         document.getElementById("number-input").style.display = "none";
-        document.getElementById("comment").style.display = "none";
-        
+        document.getElementById("comment").innerHTML = "The number was " + randomNum;
     }
   }
 
